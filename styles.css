@@ -31,7 +31,7 @@ a:hover {
 section {
   padding: 60px 20px;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
 }
 
 /* Countdown */
@@ -112,12 +112,13 @@ section {
 }
 
 .typewriter {
-  font-size: 2.5rem;
-  border-right: 4px solid #b30086;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-  animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #b30086;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  min-height: 4rem;
 }
 
 @keyframes typing {
@@ -355,27 +356,35 @@ button[type="submit"]:hover {
   background-color: #ff69b4;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .wishlist-items {
-    grid-template-columns: 1fr;
+/*@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
   }
 
-  .typewriter {
-    font-size: 2rem;
+  header h1 {
+    font-size: 24px;
   }
 
-  #countdown {
-    font-size: 1.2rem;
+  section {
+    padding: 1rem;
   }
 
-  .music-toggle {
-    bottom: 15px;
-    right: 15px;
-    padding: 10px 15px;
+  form input,
+  form textarea,
+  form button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .countdown {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
   }
 }
 
-.visible {
-  animation: fadeInUp 1s ease forwards;
-}

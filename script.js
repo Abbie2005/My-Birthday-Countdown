@@ -1,6 +1,8 @@
 // Countdown Timer
 const countdownEl = document.getElementById('countdown');
 const birthday = new Date('September 7, 2025 00:00:00').getTime();
+const typewriter = document.getElementsByClassName('typewriter');
+
 
 const updateCountdown = () => {
   const now = new Date().getTime();
@@ -8,6 +10,8 @@ const updateCountdown = () => {
 
   if (distance < 0) {
     countdownEl.innerHTML = "🎉 It's My Birthday Today! 🥳";
+    typewriter.innerHTML = "🎉 It's My Birthday Today! 🥳";
+
     return;
   }
 
@@ -22,17 +26,19 @@ const updateCountdown = () => {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
+
 // Typewriter effect for the heading
-document.addEventListener("DOMContentLoaded", function () {
-  const heading = document.querySelector(".typewriter");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const heading = document.querySelector(".typewriter");
 
-  const today = new Date();
-  const isBirthday = today.getMonth() === 8 && today.getDate() === 7; // Sept 7
+//   const today = new Date();
+//   const isBirthday = today.getMonth() === 8 && today.getDate() === 7; // Sept 7
 
-  if (isBirthday) {
-    heading.textContent = "🎉 It’s My Birthday Today! 🩷🧁💫";
-  }
-});
+//   if (isBirthday) {
+//     heading.textContent = "🎉 It’s My Birthday Today! 🩷🧁💫";
+//   }
+// });
+
 
 // Confetti
 window.onload = function () {

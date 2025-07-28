@@ -28,7 +28,7 @@
 <section class="hero-sparkles">
   <section class="hero">
     <div class="hero-content">
-      <h1 class="typewriter">🩷 It’s Almost My Special Day! 🧁✨</h1>
+      <h1 class="typewriter"></h1>
       <p>I'm Abigail — software engineering student, embedded systems dreamer, and lover of Jesus.</p>
       <p>This September 7th, I'm levelling up in life and code! 💻🎉. I’m blooming into a new age, and I’d love for you to be part of the magic 🌷✨</p>
       <div class="emoji">🎈💖👩🏽‍💻🧁🎁🫶🏽</div>
@@ -106,7 +106,7 @@
   <input type="hidden" name="_subject" value="New Birthday Wish!">
   <input type="hidden" name="_template" value="box">
   <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="thank-you.html">
+  <input type="hidden" name="_next" value="https://abbie2005.github.io/My-Birthday-Countdown/thank-you.html">
   <input type="hidden" name="_autoresponse" value="🎉Your birthday wish has been sent to Abigail! 💌">
 
   <button type="submit">Send Wish 🎉</button>
@@ -134,6 +134,7 @@
   <source src="https://www.soundjay.com/human/applause-01.mp3" type="audio/mpeg">
 </audio>
 
+
   <!-- Confetti Script -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
   <script src="script.js"></script>
@@ -156,6 +157,7 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
 
+  
   //cheering sounds on the day of my birthday
   document.addEventListener("DOMContentLoaded", function () {
     const today = new Date();
@@ -174,5 +176,22 @@
     }
   });
 </script>
+<script>
+  const text = "🩷 It’s Almost My Special Day! 🧁✨";
+  const container = document.querySelector('.typewriter');
+  let index = 0;
+
+  function typeChar() {
+    if (index < text.length) {
+      container.innerHTML += text.charAt(index);
+      index++;
+      setTimeout(typeChar, 80); // Adjust speed here (ms)
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', typeChar);
+</script>
+
 </body>
 </html>
+
