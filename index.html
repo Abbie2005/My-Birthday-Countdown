@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abigail’s Birthday Bash 🎉</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Countdown Section -->
+ 
+  <div class="countdown-container">
+    <p class="countdown-text">Countdown to My Birthday 🎂:</p>
+    <div id="countdown"></div>
+  </div>
+
+<div class="counter-box">
+  🎉 <span id="visitorCount">0</span> friends have stopped by!
+</div>
+
+<div class="chat-bubble" id="chatBot">
+  <div class="chat-header">AbigailBot 🤖</div>
+  <div class="chat-body">Hey there! I'm so glad you stopped by 🥹💖</div>
+</div>
+
+
+<section class="hero-sparkles">
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="typewriter">🩷 It’s Almost My Special Day! 🧁✨</h1>
+      <p>I'm Abigail — software engineering student, embedded systems dreamer, and lover of Jesus.</p>
+      <p>This September 7th, I'm levelling up in life and code! 💻🎉. I’m blooming into a new age, and I’d love for you to be part of the magic 🌷✨</p>
+      <div class="emoji">🎈💖👩🏽‍💻🧁🎁🫶🏽</div>
+      <p>Wanna be part of the celebration? Scroll to drop a <span class="highlight">sweet wish</span>, send me a <span class="highlight">gift</span>, or a bank transfer (ego) blessing 😁</p>
+      <p class="love-byte">Compiling birthday cheer... <span class="highlight">⏳ Done! </span> Thanks for being part of my system 🎉</p>
+    </div>
+  </section>
+
+    <!-- ✨ Sparkle elements -->
+  <div class="sparkle" style="top: 30%; left: 10%;"></div>
+  <div class="sparkle" style="top: 60%; left: 50%;"></div>
+  <div class="sparkle" style="top: 40%; left: 80%;"></div>
+  <div class="sparkle" style="top: 20%; left: 65%;"></div>
+  <div class="sparkle" style="top: 70%; left: 25%;"></div>
+</section>
+
+
+  <section class="wishlist">
+    <h2>My Birthday Wishlist 🎁</h2>
+    <p>Here are a few things that would make me smile! 💕</p>
+
+    <div class="wishlist-items">
+      <div class="item">
+        <h3>Wireless Earbuds 🎧</h3>
+        <p>For peaceful coding vibes and podcast binges.</p>
+        <a href="https://www.jumia.com.ng/generic-pro-6s-fingerprint-earbuds-noise-cancellations-earphone-personalized-spatial-audio-sweat-and-water-resistant-earpodz-pink-418475768.html" target="_blank">View Gift</a>
+      </div>
+
+      <div class="item">
+        <h3>Gaming Chair + Table/h3>
+        <p>For comfy coding sessions, quiet time, and building tech dreams in style ✨.</p>
+        <a href="https://www.jumia.com.ng/generic-executive-office-gaming-chair-gaming-desk-pink-415156685.html" target="_blank">View Gift</a>
+      </div>
+
+      <div class="item">
+        <h3>Smart Watch</h3>
+        <p>❤️❤️❤️❤️❤️❤️</p>
+        <a href="https://www.jumia.com.ng/generic-smart-watch-customize-the-watch-face-women-bluetooth-call-2025-smart-watch-291336791.html" target="_blank">View Gift</a>
+      </div>
+
+      <div class="item">
+        <h3>Power Bank 🔋</h3>
+        <p>Never run out of juice during coding marathons.</p>
+        <a href="https://www.jumia.com.ng/ace-elec-50000-mah-power-banks-with-led-light-portable-super-fast-charger..-402064365.html" target="_blank">View Gift</a>
+      </div>
+    </div>
+  </section>
+
+<section class="section">
+  <section class="support">
+    <h2>Send a Birthday Blessing 💸</h2>
+    <p>If you'd love to support my dreams or just make me smile today, here's how you can send a gift 🎁💖</p>
+
+    <div class="bank-info">
+      <h3>Bank Transfer</h3>
+      <p><strong>Bank Name:</strong> Zenith Bank</p>
+      <p><strong>Account Name:</strong> Abigail Orevaoghene Asieba</p>
+      <p><strong>Account Number:</strong> 2051390136</p>
+    </div>
+
+
+    <p class="thank-you">Thank you for your kindness! Every naira counts 💕✨</p>
+  </section>
+</section>
+
+
+  <section class="wishes">
+    <h2>Leave a Birthday Wish 💌</h2>
+    <p>I’d love to hear from you! Drop a kind word, a prayer, or even a funny memory 🥰</p>
+
+<form action="https://formsubmit.co/asiebaabigail2005@gmail.com
+" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <textarea name="message" rows="5" placeholder="Type your birthday wish here..." required></textarea>
+
+  <!-- Optional hidden inputs -->
+  <input type="hidden" name="_subject" value="New Birthday Wish!">
+  <input type="hidden" name="_template" value="box">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="#thank-you" value="https://yourdomain.com/thank-you.html"> <!-- optional -->
+    <input type="hidden" name="_auto response" value="🎉Your birthday wish has been sent to Abigail! 💌">
+
+  
+
+  <button type="submit">Send Wish 🎉</button>
+</form>
+
+
+
+    <p class="note">PS: Your message goes straight to my inbox 💌</p>
+  </section>
+
+
+
+  <!-- Modal -->
+  <div class="modal" id="wishModal">
+    <div class="modal-content">
+      <p>🎉 Your birthday wish has been sent to Abigail! 💌</p>
+      <button onclick="closeModal()">OK</button>
+    </div>
+  </div>
+
+  <audio id="birthday-audio" preload="auto">
+  <source src="https://www.soundjay.com/human/applause-01.mp3" type="audio/mpeg">
+</audio>
+
+  <!-- Confetti Script -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyD5_c9nBuWpKHZjphpOhmcIKSRLfsyhfrY",
+    authDomain: "abigail-birthday.firebaseapp.com",
+    projectId: "abigail-birthday",
+    storageBucket: "abigail-birthday.firebasestorage.app",
+    messagingSenderId: "927470809244",
+    appId: "1:927470809244:web:8f4838574dc4de0cfffd59"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+
+  //cheering sounds on the day of my birthday
+  document.addEventListener("DOMContentLoaded", function () {
+    const today = new Date();
+    const isBirthday = today.getDate() === 7 && today.getMonth() === 8; // September = 8
+
+    if (isBirthday) {
+      const audio = document.getElementById("birthday-audio");
+      
+      // Try to play after slight delay
+      setTimeout(() => {
+        audio.volume = 0.5; // moderate volume
+        audio.play().catch((error) => {
+          console.log("Autoplay failed. User interaction might be needed.");
+        });
+      }, 1500); // 1.5 seconds after page load
+    }
+  });
+</script>
+</body>
+</html>
