@@ -27,19 +27,6 @@ setInterval(updateCountdown, 1000);
 updateCountdown();
 
 
-// Typewriter effect for the heading
-// document.addEventListener("DOMContentLoaded", function () {
-//   const heading = document.querySelector(".typewriter");
-
-//   const today = new Date();
-//   const isBirthday = today.getMonth() === 8 && today.getDate() === 7; // Sept 7
-
-//   if (isBirthday) {
-//     heading.textContent = "🎉 It’s My Birthday Today! 🩷🧁💫";
-//   }
-// });
-
-
 // Confetti
 window.onload = function () {
   setTimeout(() => {
