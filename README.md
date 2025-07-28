@@ -1,7 +1,7 @@
 # 🎉 Abigail's Birthday Countdown Website 🎂
 
 Welcome to my birthday countdown and celebration site! 🧁✨  
-Built with love to showcase creativity in frontend web development — and of course, to mark my special day 🎉
+Built with love to showcase creativity in frontend web development and of course, to mark my special day 🎉
 
 ---
 
