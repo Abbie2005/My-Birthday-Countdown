@@ -229,24 +229,30 @@ section {
 
 
 /* Support Section */
-.support {
-  background: #e1f5fe;
-}
-
-.bank-info {
-  background: #ffffff;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-
-.thank-you {
+.online-pay {
+  text-align: center;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   margin-top: 20px;
-  font-style: italic;
-  color: #4a148c;
 }
+
+.pay-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #8a2be2; /* Purple-blue mix */
+  color: #fff;
+  border-radius: 30px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.pay-btn:hover {
+  background-color: #5a1d91;
+}
+
 
 /* Wishes Section */
 .wishes {
